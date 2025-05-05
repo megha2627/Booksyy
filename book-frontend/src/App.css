@@ -1,0 +1,31 @@
+/* Ensure body and html take up full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container wrapping the content and footer */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures full height */
+}
+
+/* Content section that should take up available space and be scrollable */
+.app-content {
+  flex: 1; /* This allows the content section to expand */
+  padding: 20px;
+  background-color: #f4f4f4; /* Just an example */
+  overflow-y: auto; /* Makes the content scrollable */
+}
+
+/* Footer specific styling */
+.custom-footer {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: auto; /* Ensures footer is pushed to bottom */
+  position: relative; /* Normal block layout */
+}

@@ -1,0 +1,76 @@
+.book-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  padding: 80px 20px;
+}
+
+.book-card {
+  background-color: white;
+  width: 90%;
+  max-width: 1100px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-content {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.book-image img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.book-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book-title {
+  font-size: 2.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-info p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+.book-description {
+  margin-top: 20px;
+  line-height: 1.7;
+  color: #444;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .book-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-image img {
+    width: 200px;
+  }
+
+  .book-title {
+    text-align: center;
+  }
+}

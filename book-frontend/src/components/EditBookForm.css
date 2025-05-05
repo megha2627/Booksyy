@@ -1,0 +1,75 @@
+/* Set a soft background for the entire page */
+body {
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container that wraps the form */
+.edit-book-container {
+  margin-top: 100px; /* space from header */
+  padding: 40px;
+  max-width: 700px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Form itself */
+.edit-book-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Headline */
+.edit-book-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+/* Labels */
+.edit-book-form label {
+  font-weight: bold;
+  color: #343a40;
+}
+
+/* Input fields */
+.edit-book-form input,
+.edit-book-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+}
+
+/* On focus styling */
+.edit-book-form input:focus,
+.edit-book-form textarea:focus {
+  border-color: #0077b6;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 119, 182, 0.2);
+}
+
+/* Submit button */
+.edit-book-form button {
+  background-color: #0077b6;
+  color: white;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.edit-book-form button:hover {
+  background-color: #005f8d;
+}
